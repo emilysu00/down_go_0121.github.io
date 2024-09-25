@@ -2259,6 +2259,8 @@ body {
   .prepare-scroll-hint img {
     right: 6vw;
     width: 0vw;
+    scale: 0;
+    opacity: 0;
     top: 85vh;
   }
 }

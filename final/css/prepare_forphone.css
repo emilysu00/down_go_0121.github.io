@@ -2258,7 +2258,7 @@ body {
   }
   .prepare-scroll-hint img {
     right: 6vw;
-    width: 20vw;
+    width: 0vw;
     top: 85vh;
   }
 }

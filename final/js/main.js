@@ -3,6 +3,17 @@
 let scene = document.getElementById("scene");
 let parallaxInstance = new Parallax(scene);
 
+//從首頁漢堡轉換到背包頁
+document.addEventListener("DOMContentLoaded", function () {
+  var mountainEquipLink = document.querySelector(".wood_option .preparing a");
+
+  mountainEquipLink.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    window.location.href = "bag_hurt.html#package-id";
+  });
+});
+
 //Call out hamburger
 $("#menu_burger").click(function () {
   $(".menu").css("visibility", "visible").show();

@@ -246,32 +246,32 @@ document.getElementById("food-arrow1").addEventListener("click", function () {
   document.getElementsByClassName("food-frame1")[0].classList.remove("active");
   document.getElementsByClassName("food-frame2")[0].classList.add("active");
   var img = document.getElementById("food-book");
-  img.src = "img/package/雙頁書_中繼.gif";
+  img.src = "img/雙頁書_中繼.gif";
 });
 document.getElementById("food-arrow2").addEventListener("click", function () {
   document.getElementsByClassName("food-frame1")[0].classList.add("active");
   document.getElementsByClassName("food-frame2")[0].classList.remove("active");
   var img = document.getElementById("food-book");
-  img.src = "img/package/雙頁書_中繼.gif";
+  img.src = "img/雙頁書_中繼.gif";
 });
 document.getElementById("food-arrow3").addEventListener("click", function () {
   document.getElementsByClassName("food-frame3")[0].classList.add("active");
   document.getElementsByClassName("food-frame2")[0].classList.remove("active");
   var img = document.getElementById("food-book");
-  img.src = "img/package/雙頁書_中繼.gif";
+  img.src = "img/雙頁書_中繼.gif";
 });
 document.getElementById("food-arrow4").addEventListener("click", function () {
   document.getElementsByClassName("food-frame2")[0].classList.add("active");
   document.getElementsByClassName("food-frame3")[0].classList.remove("active");
   var img = document.getElementById("food-book");
-  img.src = "img/package/雙頁書_中繼.gif";
+  img.src = "img/雙頁書_中繼.gif";
   document.getElementById("food-arrow5").addEventListener("click", function () {
     document.getElementsByClassName("food-frame4")[0].classList.add("active");
     document
       .getElementsByClassName("food-frame3")[0]
       .classList.remove("active");
     var img = document.getElementById("food-book");
-    img.src = "img/package/雙頁書_中繼.gif";
+    img.src = "img/雙頁書_中繼.gif";
   });
   document.getElementById("food-arrow6").addEventListener("click", function () {
     document.getElementsByClassName("food-frame3")[0].classList.add("active");
@@ -279,7 +279,7 @@ document.getElementById("food-arrow4").addEventListener("click", function () {
       .getElementsByClassName("food-frame4")[0]
       .classList.remove("active");
     var img = document.getElementById("food-book");
-    img.src = "img/package/雙頁書_中繼.gif";
+    img.src = "img/雙頁書_中繼.gif";
   });
 });
 document.getElementById("food-x1").addEventListener("click", function () {
@@ -374,13 +374,13 @@ document.getElementById("cook-arrow1").addEventListener("click", function () {
   document.getElementsByClassName("cook-frame2")[0].classList.add("active");
   document.getElementsByClassName("cook-frame1")[0].classList.remove("active");
   var img = document.getElementById("cook-book");
-  img.src = "img/package/雙頁書_中繼.gif";
+  img.src = "img/雙頁書_中繼.gif";
 });
 document.getElementById("cook-arrow2").addEventListener("click", function () {
   document.getElementsByClassName("cook-frame1")[0].classList.add("active");
   document.getElementsByClassName("cook-frame2")[0].classList.remove("active");
   var img = document.getElementById("cook-book");
-  img.src = "img/package/雙頁書_中繼.gif";
+  img.src = "img/雙頁書_中繼.gif";
 });
 document.getElementById("cook-x1").addEventListener("click", function () {
   setTimeout(function () {
@@ -475,25 +475,25 @@ document.getElementById("cloth-arrow1").addEventListener("click", function () {
   document.getElementsByClassName("cloth-frame1")[0].classList.remove("active");
   document.getElementsByClassName("cloth-frame2")[0].classList.add("active");
   var img = document.getElementById("cloth-book");
-  img.src = "img/package/雙頁書_中繼.gif";
+  img.src = "img/雙頁書_中繼.gif";
 });
 document.getElementById("cloth-arrow2").addEventListener("click", function () {
   document.getElementsByClassName("cloth-frame1")[0].classList.add("active");
   document.getElementsByClassName("cloth-frame2")[0].classList.remove("active");
   var img = document.getElementById("cloth-book");
-  img.src = "img/package/雙頁書_中繼.gif";
+  img.src = "img/雙頁書_中繼.gif";
 });
 document.getElementById("cloth-arrow3").addEventListener("click", function () {
   document.getElementsByClassName("cloth-frame3")[0].classList.add("active");
   document.getElementsByClassName("cloth-frame2")[0].classList.remove("active");
   var img = document.getElementById("cloth-book");
-  img.src = "img/package/雙頁書_中繼.gif";
+  img.src = "img/雙頁書_中繼.gif";
 });
 document.getElementById("cloth-arrow4").addEventListener("click", function () {
   document.getElementsByClassName("cloth-frame2")[0].classList.add("active");
   document.getElementsByClassName("cloth-frame3")[0].classList.remove("active");
   var img = document.getElementById("cloth-book");
-  img.src = "img/package/雙頁書_中繼.gif";
+  img.src = "img/雙頁書_中繼.gif";
 });
 document.getElementById("cloth-x1").addEventListener("click", function () {
   setTimeout(function () {

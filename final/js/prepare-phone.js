@@ -43,7 +43,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("living-frame2")[0].classList.add("active");
     var img = document.getElementById("living-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("living-forphone-arrow2")
@@ -53,7 +53,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("living-frame1")[0].classList.add("active");
     var img = document.getElementById("living-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 
 document
@@ -113,7 +113,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("other-frame2")[0].classList.add("active");
     var img = document.getElementById("other-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("other-forphone-arrow2")
@@ -123,7 +123,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("other-frame1")[0].classList.add("active");
     var img = document.getElementById("other-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("other-phone-x1")
@@ -181,7 +181,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame2-1")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("food-forphone-arrow2")
@@ -191,7 +191,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame1-1")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("food-forphone-arrow3")
@@ -201,7 +201,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame3-1")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("food-forphone-arrow4")
@@ -211,7 +211,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame2-1")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("food-forphone-arrow5")
@@ -221,7 +221,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame4-1")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("food-forphone-arrow6")
@@ -231,7 +231,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame3-1")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("food-forphone-arrow7")
@@ -241,7 +241,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame5")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("food-forphone-arrow8")
@@ -251,7 +251,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame4-1")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("food-forphone-arrow9")
@@ -261,7 +261,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame6")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("food-forphone-arrow10")
@@ -271,7 +271,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame5")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("food-forphone-arrow11")
@@ -281,7 +281,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame7")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("food-forphone-arrow12")
@@ -291,7 +291,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("food-frame6")[0].classList.add("active");
     var img = document.getElementById("food-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 
 document.getElementById("food-phone-x1").addEventListener("click", function () {
@@ -412,7 +412,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("cook-frame2-1")[0].classList.add("active");
     var img = document.getElementById("cook-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cook-forphone-arrow2")
@@ -422,7 +422,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("cook-frame1-1")[0].classList.add("active");
     var img = document.getElementById("cook-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cook-forphone-arrow3")
@@ -432,7 +432,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("cook-frame3")[0].classList.add("active");
     var img = document.getElementById("cook-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cook-forphone-arrow4")
@@ -442,7 +442,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("cook-frame2-1")[0].classList.add("active");
     var img = document.getElementById("cook-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cook-forphone-arrow5")
@@ -452,7 +452,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("cook-frame4")[0].classList.add("active");
     var img = document.getElementById("cook-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cook-forphone-arrow6")
@@ -462,7 +462,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("cook-frame3")[0].classList.add("active");
     var img = document.getElementById("cook-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document;
 document.getElementById("cook-phone-x1").addEventListener("click", function () {
@@ -540,7 +540,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("walk-frame2")[0].classList.add("active");
     var img = document.getElementById("walk-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("walk-forphone-arrow2")
@@ -550,7 +550,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("walk-frame1")[0].classList.add("active");
     var img = document.getElementById("walk-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document.getElementById("walk-phone-x1").addEventListener("click", function () {
   document.getElementsByClassName("walk-frame1")[0].classList.remove("active");
@@ -605,7 +605,7 @@ document
       .getElementsByClassName("cloth-frame2-1")[0]
       .classList.add("active");
     var img = document.getElementById("cloth-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cloth-forphone-arrow2")
@@ -617,7 +617,7 @@ document
       .getElementsByClassName("cloth-frame2-1")[0]
       .classList.remove("active");
     var img = document.getElementById("cloth-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cloth-forphone-arrow3")
@@ -629,7 +629,7 @@ document
       .getElementsByClassName("cloth-frame3-1")[0]
       .classList.add("active");
     var img = document.getElementById("cloth-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cloth-forphone-arrow4")
@@ -641,7 +641,7 @@ document
       .getElementsByClassName("cloth-frame3-1")[0]
       .classList.remove("active");
     var img = document.getElementById("cloth-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cloth-forphone-arrow5")
@@ -651,7 +651,7 @@ document
       .classList.remove("active");
     document.getElementsByClassName("cloth-frame4")[0].classList.add("active");
     var img = document.getElementById("cloth-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cloth-forphone-arrow6")
@@ -663,7 +663,7 @@ document
       .getElementsByClassName("cloth-frame4")[0]
       .classList.remove("active");
     var img = document.getElementById("cloth-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cloth-forphone-arrow7")
@@ -673,7 +673,7 @@ document
       .getElementsByClassName("cloth-frame4")[0]
       .classList.remove("active");
     var img = document.getElementById("cloth-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cloth-forphone-arrow8")
@@ -683,7 +683,7 @@ document
       .getElementsByClassName("cloth-frame5")[0]
       .classList.remove("active");
     var img = document.getElementById("cloth-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cloth-forphone-arrow9")
@@ -693,7 +693,7 @@ document
       .getElementsByClassName("cloth-frame5")[0]
       .classList.remove("active");
     var img = document.getElementById("cloth-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cloth-forphone-arrow10")
@@ -703,7 +703,7 @@ document
       .getElementsByClassName("cloth-frame6")[0]
       .classList.remove("active");
     var img = document.getElementById("cloth-book-forphone");
-    img.src = "img/package/單頁書_中繼.gif";
+    img.src = "img/單頁書_中繼.gif";
   });
 document
   .getElementById("cloth-phone-x1")

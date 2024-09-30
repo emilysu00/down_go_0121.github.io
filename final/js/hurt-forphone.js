@@ -134,6 +134,15 @@ document
       .classList.remove("active");
     var img = document.getElementById("cycle-book-forphone");
     img.src = "img/單頁書_闔上.gif";
+    document
+      .getElementsByClassName("cycle_detail1-forphone")[0]
+      .classList.remove("active");
+    document
+      .getElementsByClassName("cycle_detail2-forphone")[0]
+      .classList.remove("active");
+    document
+      .getElementsByClassName("cycle_detail3-forphone")[0]
+      .classList.remove("active");
     if (
       !document
         .getElementsByClassName("cycle-forphone-hint2")[0]
@@ -297,6 +306,18 @@ document
       .classList.remove("active");
     var img = document.getElementById("return-book-forphone");
     img.src = "img/單頁書_闔上.gif";
+    document
+      .getElementsByClassName("return_detail1-forphone")[0]
+      .classList.remove("active");
+    document
+      .getElementsByClassName("return_detail2-forphone")[0]
+      .classList.remove("active");
+    document
+      .getElementsByClassName("return_detail3-forphone")[0]
+      .classList.remove("active");
+    document
+      .getElementsByClassName("return_detail4-forphone")[0]
+      .classList.remove("active");
     if (
       !document
         .getElementsByClassName("return-forphone-hint2")[0]
@@ -443,6 +464,15 @@ document
       .classList.remove("active");
     var img = document.getElementById("spinreturn-book-forphone");
     img.src = "img/單頁書_闔上.gif";
+    document
+      .getElementsByClassName("spinreturn_detail1-forphone")[0]
+      .classList.remove("active");
+    document
+      .getElementsByClassName("spinreturn_detail2-forphone")[0]
+      .classList.remove("active");
+    document
+      .getElementsByClassName("spinreturn_detail3-forphone")[0]
+      .classList.remove("active");
     if (
       !document
         .getElementsByClassName("spinreturn-forphone-hint2")[0]
@@ -583,6 +613,15 @@ document
       .classList.remove("active");
     var img = document.getElementById("eight-book-forphone");
     img.src = "img/單頁書_闔上.gif";
+    document
+      .getElementsByClassName("eight_detail1-forphone")[0]
+      .classList.remove("active");
+    document
+      .getElementsByClassName("eight_detail2-forphone")[0]
+      .classList.remove("active");
+    document
+      .getElementsByClassName("eight_detail3-forphone")[0]
+      .classList.remove("active");
     if (
       !document
         .getElementsByClassName("eight-forphone-hint2")[0]
@@ -698,6 +737,12 @@ document
       .classList.remove("active");
     var img = document.getElementById("spin-book-forphone");
     img.src = "img/單頁書_闔上.gif";
+    document
+      .getElementsByClassName("spin_detail1-forphone")[0]
+      .classList.remove("active");
+    document
+      .getElementsByClassName("spin_detail2-forphone")[0]
+      .classList.remove("active");
     if (
       !document
         .getElementsByClassName("spin-forphone-hint2")[0]

@@ -7,8 +7,8 @@ function handleOrientation(event) {
   const gamma = event.gamma; // 手機左右傾斜
 
   // 計算背景應移動的量 (可調整幅度)
-  const xOffset = gamma * 1.5; // 調整左右移動的速度
-  const yOffset = beta * 1.5; // 調整上下移動的速度
+  const xOffset = gamma * 3; // 調整左右移動的速度
+  const yOffset = beta * 6; // 調整上下移動的速度
 
   // 更新背景的位置
   parallaxBg.style.transform = `translate(${xOffset}px, ${yOffset}px)`;

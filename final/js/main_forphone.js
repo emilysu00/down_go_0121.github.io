@@ -5,6 +5,7 @@ const parallaxBg = document.querySelector(".bm");
 function handleOrientation(event) {
   const beta = event.beta; // 手機上下傾斜
   const gamma = event.gamma; // 手機左右傾斜
+  console.log(event.beta);
 
   // 計算背景應移動的量 (可調整幅度)
   const xOffset = gamma * 3; // 調整左右移動的速度

@@ -1,5 +1,5 @@
 //Parallax
-const parallaxBg = document.querySelector("#scene");
+const parallaxBg = document.querySelector(".bg");
 
 // 將傾斜數據應用於背景偏移
 function handleOrientation(event) {

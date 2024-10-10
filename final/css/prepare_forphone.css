@@ -400,7 +400,43 @@ body {
     text-shadow: 10px 10px 5px #5f1c68;
     cursor: pointer;
   }
-
+  .header-forphone {
+    position: fixed;
+    width: 65vw;
+    color: #ffffff;
+    /* font-family: Noto Sans TC; */
+    font-size: 20px;
+    font-style: Medium;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    transition: transform ease;
+    z-index: 1000;
+    opacity: 1;
+    transform: scale(1);
+    background-color: #00000075;
+    border-radius: 50px;
+    top: 78vh;
+    left: 8vw;
+    padding: 5vw 10vw;
+  }
+  .header-forphone p {
+    transform: scale(1);
+  }
+  .scrollingNumber-forphone {
+    position: absolute;
+    left: 10vw;
+  }
+  .M-forphone {
+    position: absolute;
+    left: 20vw;
+  }
+  .eleven-forphone {
+    margin-left: 55.5vw;
+    width: fit-content;
+  }
   .header {
     position: fixed;
     width: 100vw;
@@ -480,13 +516,10 @@ body {
 
   .flip-card {
     position: relative;
-    left: 47.5vw;
-    top: -11vh;
-    width: 10vw;
-    height: 4vh;
-    margin-left: 1vw;
-    transform: scale(0);
-    opacity: 0;
+    left: 39vw;
+    top: 69.6vh;
+    width: 28vw;
+    z-index: 1001;
   }
 
   .thecard {
@@ -2219,7 +2252,7 @@ body {
     position: absolute;
     transform: scale(1);
     width: 100vw;
-    margin-top: -25vh;
+    margin-top: -10vh;
     background-color: #00000065;
     z-index: 1000;
   }

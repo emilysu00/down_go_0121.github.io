@@ -37,6 +37,10 @@ body {
 .header_right {
   cursor: pointer;
 }
+.header-forphone {
+  opacity: 0;
+  transform: scale(0);
+}
 
 /* hamburger */
 

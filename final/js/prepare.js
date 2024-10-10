@@ -124,6 +124,41 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+// phone header level 等級滾動效果
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollingNumberElement = document.getElementById(
+    "scrollingNumber-phone"
+  );
+  const scrollingTextElement = document.getElementById("scrollingText-phone");
+
+  let currentNumber = 1000;
+
+  window.addEventListener("scroll", function () {
+    const scrollPercentage =
+      (window.scrollY /
+        (document.documentElement.scrollHeight - window.innerHeight)) *
+      100;
+
+    const newNumber = Math.round(100 + (scrollPercentage / 100) * 400);
+
+    if (newNumber !== currentNumber) {
+      currentNumber = newNumber;
+      scrollingNumberElement.textContent = currentNumber;
+
+      // 根据 scrollingNumber 的值计算新的 scrollingText 内容
+      let newText;
+      if (currentNumber >= 400) {
+        newText = "1-3";
+      } else if (currentNumber >= 200) {
+        newText = "1-2";
+      } else {
+        newText = "1-1";
+      }
+
+      scrollingTextElement.textContent = newText;
+    }
+  });
+});
 
 // 背包頁:Start
 setTimeout(function () {

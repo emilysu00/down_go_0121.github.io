@@ -1939,14 +1939,14 @@ body {
     position: absolute;
     width: auto;
     height: 100vh;
-    left: -40vw;
+    left: -45vw;
     z-index: 1;
   }
   .entrybg_2 img {
     position: absolute;
     width: auto;
     height: 100vh;
-    left: -45vw;
+    left: -40vw;
     bottom: -10vh;
     z-index: 2;
   }
@@ -1954,7 +1954,7 @@ body {
     position: absolute;
     width: auto;
     height: 100vh;
-    left: -47vw;
+    left: -49vw;
     top: 5vh;
     z-index: 3;
   }

@@ -301,8 +301,8 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollingTextElement.textContent = newText;
     }
 
- // 计算 300vh 对应的像素值
- const thresholdY = window.innerHeight * 2; // 300vh 等于窗口高度的 3 倍
+ // 计算 200vh 对应的像素值
+ const thresholdY = window.innerHeight * 1.5; // 300vh 等于窗口高度的 3 倍
  const currentScrollY = window.scrollY;
 
  if (currentScrollY < thresholdY) {

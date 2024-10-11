@@ -1912,7 +1912,7 @@ body {
 
   .entry {
     position: relative;
-    top: 10vh;
+    top: 5vh;
   }
   .bg {
     background-image: url(../img/login/深處.png);
@@ -1939,14 +1939,14 @@ body {
     position: absolute;
     width: auto;
     height: 100vh;
-    left: -30vw;
+    left: -40vw;
     z-index: 1;
   }
   .entrybg_2 img {
     position: absolute;
     width: auto;
     height: 100vh;
-    left: -38vw;
+    left: -45vw;
     bottom: -10vh;
     z-index: 2;
   }
@@ -1954,7 +1954,7 @@ body {
     position: absolute;
     width: auto;
     height: 100vh;
-    left: -40vw;
+    left: -45vw;
     top: 5vh;
     z-index: 3;
   }
@@ -1998,7 +1998,7 @@ body {
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 16px;
-    padding: 2.8vh 10vw 0vh 0vw;
+    padding: 2.8vh 8vw 0vh 0vw;
     line-height: 0;
   }
   .Btn-purcahse:hover,

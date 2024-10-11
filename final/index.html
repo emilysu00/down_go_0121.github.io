@@ -7,9 +7,12 @@
     <link rel="icon" href="./img/mario.png" type="image/icon type" />
     <link href="./css/reset.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet" />
-    <link href="./css/main_forphone.css" rel="stylesheet"/>
     </head>
   <body>
+    <!-- 跳轉小青蛙 -->
+    <div id="frogjump">
+      <img id="jump" src="./img/goods/jump.gif" alt="" />
+    </div>
     <!--index-->
     <nav>
       <div data-depth="0.3" class="logo">
@@ -87,7 +90,7 @@
     <section class="menu">
       <nav>
         <div data-depth="0.3" class="logo">
-          <a href="./index.html">
+          <a href="#index">
             <img src="./img/logotype.png" alt="">
           </a>
         </div>
@@ -98,6 +101,9 @@
         </div>
       </nav>
       <div class="menu_bgimg">
+        <div data-depth="0.1" class="bg">
+          <img src="./img/main/background.png" alt="">
+        </div>
         <div data-depth="0.1" class="bm">
           <img src="./img/main/back-mountain.png" alt="">
         </div>
@@ -140,57 +146,54 @@
       </div>
       <!-- 分隔線 -->
       <div class="cutline"></div>
-      <div class="cutline2"></div>
-      <div class="cutline3"></div>
-
       <!--跳頁選項-->
       <div class="wood_option">
         <div class="preparing">
-          <a href="#package-id">
+          <a href="./bag_hurt.html">
             <p>登山裝備</p>
           </a>
         </div>
         <div class="bandage">
-          <a href="#hurt-id">
+          <a href="./bag_hurt.html">
             <p>急救包紮</p>
         </div>
       </div>
       <div class="enter_option">
         <div class="snakbee">
           <a href="./fight.html">
-            <p class="hover">毒螫魔</p>
+            <p>毒螫魔</p>
             <p class="purple">小心毒蟲</p>
           </a>
         </div>
         <div class="fish">
           <a href="./fight.html">
-            <p class="hover">鐵支麵粉鯛</p>
+            <p>鐵支麵粉鯛</p>
             <p class="purple">水域安全</p>
-        </div>
+        </div href="./fight.html">
         <div class="pig">
           <a href="./fight.html">
-            <p class="hover">相撲熊豬刃牙</p>
+            <p>相撲熊豬刃牙</p>
             <p class="purple">野獸防衛</p>
         </div>
         <div class="hypoxia">
           <a href="./fight.html">
-            <p class="hover">高山絕氧獸</p>
+            <p>高山絕氧獸</p>
             <p class="purple">高山症</p>
         </div>
         <div class="hypothermia">
           <a href="./fight.html">
-            <p class="hover">凝寒失溫龍</p>
+            <p>凝寒失溫龍</p>
             <p class="purple">失溫防治</p>
         </div>
       </div>
       <div class="heaven_option">
         <div class="commodity">
-          <a href="./frog_purchase.html">
+          <a id="toshop">
             <p>商品購買</p>
           </a>
         </div>
         <div class="membership">
-          <a href="./frog_login.html">
+          <a id="tomember">
             <p>會員登入</p>
         </div>
       </div>
@@ -200,7 +203,6 @@
         </a>
       </div>
     </section>
-
 
     <script src="./js/gsap.min.js"></script>
     <script src="./js/parallax.min.js"></script>

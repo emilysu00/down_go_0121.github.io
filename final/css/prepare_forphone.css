@@ -2280,19 +2280,19 @@ height: 105vh;
   #bounce-text {
     position: absolute;
     margin-left: 13vw;
-    margin-top: -13.5vh;
+    margin-top: -14vh;
     color: #7b3e0e;
     line-height: 1.5vh;
     font-size: 1vh;
   }
   #bounce-arrow {
-    margin-top: 73.5vh;
+    margin-top: 74.5vh;
     margin-left: -11vw;
     position: absolute;
     width: 5vw;
   }
   #bounce-go {
-    margin-top: -11vh;
+    margin-top: -9vh;
     margin-left: 72vw;
     position: absolute;
     color: #ffe0b1;

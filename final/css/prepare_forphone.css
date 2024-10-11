@@ -1946,7 +1946,7 @@ body {
     position: absolute;
     width: auto;
     height: 100vh;
-    left: -40vw;
+    left: -47vw;
     bottom: -10vh;
     z-index: 2;
   }
@@ -2286,7 +2286,7 @@ height: 105vh;
     font-size: 1vh;
   }
   #bounce-arrow {
-    margin-top: 72.5vh;
+    margin-top: 72vh;
     margin-left: -11vw;
     position: absolute;
     width: 5vw;

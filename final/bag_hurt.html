@@ -21,7 +21,7 @@
         </div>
         <div class="menu_close" id="close_icon" >
           <a href="#menu">
-            <img src="./img/x.png" onmousedown="mDownx(this)" onmouseup="mUpx(this)">
+            <img src="./img/x.png">
           </a>
         </div>
       </nav>
@@ -113,12 +113,12 @@
       </div>
       <div class="heaven_option">
         <div class="commodity">
-          <a href="./frog_purchase.html">
+          <a id="toshop">
             <p>商品購買</p>
           </a>
         </div>
         <div class="membership">
-          <a href="./frog_login.html">
+          <a id="tomember">
             <p>會員登入</p>
         </div>
       </div>
@@ -129,60 +129,45 @@
       </div>
     </section>
 
+    <!-- 跳轉小青蛙 -->
+    <div id="frogjump">
+      <img id="jump" src="./img/goods/jump.gif" alt="" />
+    </div>
+
     <!--開頭轉場動畫-->
     <div id="secondMask"></div>
 
-    <!-- 轉場 -->
-    <!-- <div class="parallax">
-      <div class="transcloud1" id="transcloud1">
-        <img src="./img/main/clouds.png" alt="">
-      </div>
-      <div class="transcloud2" id="transcloud2">
-        <img src="./img/main/clouds.png" alt="">
-      </div>
+<!-- 背包頁:Start -->
+<div class="header-forphone">
+  <div id="scrollingNumber-forphone" class="scrollingNumber-forphone">100</div>
+  <p class="M-forphone">M</p>
+  <div class="flip-card-forphone" id="maincontainer-forphone">
+    <div class="thecard-forphone">
     </div>
-    <div class="transcloud3" id="transcloud3">
-      <img src="./img/main/clouds.png" alt="">
-    </div>
-    <div class="transcloud4" id="transcloud4">
-      <img src="./img/main/clouds.png" alt="">
-    </div>
-    </div> -->
-
-        <!-- 轉場22 -->
-    <div class="parallax">
-      <!--
-      <div class="gress">
-        <img src="./img/gress.svg" alt="">
-      </div>        
-      -->
-    </div>
-
-    <!-- 背包頁:Start -->
-      <div class="header-forphone">
-        <div id="scrollingNumber-phone" class="scrollingNumber-forphone">100</div> <p class="M-forphone">M</p>
-        <div id="scrollingText-phone" class="eleven-forphone">1-1</div>
-      </div>
-    <div class="header">
-      <div class="header_left">
-        <a href="./index.html">
-          <img src="./img/logotype.png" id="logotype" />
-        </a>
-      </div>
-      <div class="header_center">
-        <p class="altitude">ALTITUDE</p> <div id="scrollingNumber" class="scrollingNumber">100</div> <p class="M">M</p>
-        <p class="level">LEVEL</p>
-        <div id="scrollingText" class="eleven">1-1</div>
-      </div>
-      <div class="header_right">
-        <img src="./img/hambergur.png" onmousedown="mDownb(this)" onmouseup="mUpb(this)" id="bag_burger" />
-      </div>
-      <!-- 翻牌效果:S -->
-      <div class="flip-card" id="maincontainer">
-        <div class="thecard">
-        </div>
-      </div>
-      <!-- 翻牌效果:E -->
+  </div>
+  <div id="scrollingText-forphone" class="eleven-forphone">1-1</div>
+</div>
+<div class="header">
+<div class="header_left">
+  <a href="./index.html">
+    <img src="./img/logotype.png" id="logotype" />
+  </a>
+</div>
+<div class="header_center">
+  <p class="altitude">ALTITUDE</p> <div id="scrollingNumber" class="scrollingNumber">100</div> <p class="M">M</p>
+  <p class="level">LEVEL</p>
+  <div id="scrollingText" class="eleven">1-1</div>
+</div>
+<div class="header_right">
+  <img src="./img/hambergur.png" onmousedown="mDownb(this)" onmouseup="mUpb(this)" id="bag_burger" />
+</div>
+<!-- 翻牌效果:S -->
+<div class="flip-card" id="maincontainer">
+  <div class="thecard">
+  </div>
+</div>
+<!-- 翻牌效果:E -->
+</div>
     </div>
     </div>
    <section class="package" id="package-id">
@@ -1126,7 +1111,7 @@
       </div>
       <!--八字-->
       <div class="eight-book">
-        <img id="eight-book" src="./img/書_闔上.gif" />
+        <img id="eight-book" src="./img/單頁書_闔上.gif" />
       </div>
       <div class="eight-frame">
         <img id="eight-x" src="./img/x.png" />
@@ -1224,13 +1209,13 @@
       <div class="bg"></div>
       <div class="Btns">
         <div class="Btn-purcahse">
-          <a href="./goods_main.html" target="_blank">購買</a>
+          <a id="topurcahse">購買</a>
         </div>
         <div class="Btn-entry">
           <a href="./fight.html">進入登山口</a>
         </div>
         <div class="Btn-Login">
-          <a href="./login.html" target="_blank">會員登入</a>
+          <a id="tologin">會員登入</a>
         </div>
       </div>
       <div id="scene">
@@ -1251,13 +1236,21 @@
     <section class="footer">
       <div class="contents">
         <div class="shortcuts">
-          <p class="NOTICE">NOTICE</p>
+          <a href="#" class="NOTICE">
+            <p>NOTICE</p>
+          </a>
           <a href="./login.html" class="MEMBERSHIP">
             <p>MEMBERSHIP</p>
           </a>
-          <p class="GUIDE">GUIDE</p>
-          <p class="PRIVACY POLICY">PRIVACY POLICY</p>
-          <p class="ABOUT">ABOUT</p>
+          <a href="#" class="GUIDE">
+            <p>GUIDE</p>
+          </a>
+          <a href="#" class="PRIVACY_POLICY">
+            <p>PRIVACY POLICY</p>
+          </a>
+          <a href="#" class="ABOUT">
+            <p>ABOUT</p>
+          </a>
         </div>
         <div class="divider"></div>
         <div class="infos">
@@ -1283,7 +1276,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="./js/main.js"></script>
     <script src="./js/jq.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="./js/prepare.js"></script>

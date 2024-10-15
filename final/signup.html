@@ -3,200 +3,271 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Down Go 會員註冊</title>
+    <title>會員註冊</title>
     <link rel="icon" href="./img/mario.png" type="image/icon type" />
     <link href="./css/reset.css" rel="stylesheet" />
-     <!--email js-->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("mPlnfjTE4QBc0aTho");
-      })();
-    </script>
     <link href="./css/signup.css" rel="stylesheet" />
   </head>
   <body>
-     <!-- 漢堡選單 -->
-     <section class="menu">
-      <nav>
-        <div data-depth="0.3" class="logo">
-          <a href="#index">
-            <img src="./img/logotype.png" alt="">
+    <div class="header">
+      <div class="nav">
+        <div class="header_left">
+          <a href="./goods_main.html">
+            <img src="./img/logotype.png" id="logotype" />
           </a>
         </div>
-        <div class="menu_close" id="close_icon" >
-          <a href="#menu">
-            <img src="./img/x.png" onmousedown="mDownx(this)" onmouseup="mUpx(this)">
+        <div class="header_center">
+          <div class="altitude_texts">
+            <p class="altitude">ALTITUDE</p>
+            <p class="unlimited">∞</p>
+            <p class="M">M</p>
+          </div>
+          <div class="thecard">
+            <img src="./img/login_signup/chip_signup.png" alt="" />
+          </div>
+          <div class="level_texts">
+            <p class="level">LEVEL</p>
+            <div id="scrollingText" class="eleven">3-1</div>
+          </div>
+        </div>
+        <div class="header_right">
+          <div class="notification">
+            <img class="bell" src="./img/login_signup/header_鈴鐺.png" alt="" />
+            <img class="bell_badge" src="./img/login_signup/badge.png" alt="" />
+          </div>
+          <div class="cart">
+            <img
+              class="cart_icon"
+              src="./img/login_signup/header_購物車.png"
+              alt=""
+            />
+            <p class="cart_badge">2</p>
+          </div>
+          <a href="#membership" class="profile_photo">
+            <img src="./img/login_signup/profile.png" alt="" />
           </a>
         </div>
-      </nav>
-      <div class="menu_bgimg">
-        <div data-depth="0.1" class="bg">
-          <img src="./img/main/background.png" alt="">
-        </div>
-        <div data-depth="0.1" class="bm">
-          <img src="./img/main/back-mountain.png" alt="">
-        </div>
-        <div class="menu_mountain">
-          <img src="./img/main/menu_mountain.png" alt="">
-        </div>
-        <div data-depth="0.3" class="cloud_1">
-          <img src="./img/main/clouds.png" alt="">
-        </div>
-        <div data-depth="0.3" class="cloud_2">
-          <img src="./img/main/clouds.png" alt="">
-        </div>
       </div>
-      <div data-depth="0.3" class="cloud_3">
-        <img src="./img/main/clouds.png" alt="">
-      </div>
-      <div data-depth="0.3" class="cloud_4">
-        <img src="./img/main/clouds.png" alt="">
-      </div>
-      <div class="hunted">
-        <img src="./img/main/menu_hunted.png" alt="">
-      </div>
-      <div class="menu_sign">
-        <img src="./img/main/menu_sign.png" alt="">
-      </div>
-      <div class="menu_hook">
-        <img src="./img/main/menu_hook.png" alt="">
-      </div>
-      <!-- 標題 -->
-      <div class="title">
-        <div class="woodtxt">
-          <h1>救難大木屋</h1>
+    </div>
+
+    <!--註冊內容框-->
+    <div class="contents">
+      <div class="main">
+        <div class="name">
+          <h5>名稱</h5>
+          <div class="box">
+            <input type="text" placeholder="姓氏" />
+            <input class="input_name" type="text" placeholder="名字" />
+          </div>
         </div>
-        <div class="entertxt">
-          <h1>登山口</h1>
+        <div class="account">
+          <h5>帳號</h5>
+          <div class="box">
+            <input type="email" placeholder="請輸入您的電子郵件 / Emal" />
+          </div>
         </div>
-        <div class="heaven">
-          <h1>伊甸園</h1>
+        <div class="password">
+          <h5>密碼</h5>
+          <div class="box">
+            <input
+              class="password-input"
+              type="password"
+              placeholder="請輸入密碼"
+            />
+            <div class="eyes">
+              <img src="./img/login_signup/visibility.svg" alt="" />
+            </div>
+            <input
+              class="biocheck"
+              type="password"
+              placeholder="請再次輸入確認密碼"
+            />
+          </div>
         </div>
-      </div>
-      <!-- 分隔線 -->
-      <div class="cutline"></div>
-      <!--跳頁選項-->
-      <div class="wood_option">
-        <div class="preparing">
-          <a href="#package_top">
-            <p>登山裝備</p>
+        <div class="born">
+          <h5>出生日期</h5>
+          <div class="box">
+            <input class="year" type="text" placeholder="年" />
+            <div class="dropdown-container">
+              <input class="month" type="text" placeholder="月" readonly />
+              <div class="month-dropdown dropdown">
+                <div class="dropdown-option">January</div>
+                <div class="dropdown-option">Febuary</div>
+                <div class="dropdown-option">March</div>
+                <div class="dropdown-option">April</div>
+                <div class="dropdown-option">May</div>
+                <div class="dropdown-option">June</div>
+                <div class="dropdown-option">July</div>
+                <div class="dropdown-option">August</div>
+                <div class="dropdown-option">September</div>
+                <div class="dropdown-option">October</div>
+                <div class="dropdown-option">November</div>
+                <div class="dropdown-option">December</div>
+              </div>
+            </div>
+            <div class="pixeldropdown">
+              <img src="./img/goods/pixel_dropdown.svg" alt="" />
+            </div>
+            <input class="date" type="text" placeholder="日" />
+          </div>
+        </div>
+        <div class="phone">
+          <h5>電話號碼</h5>
+          <div class="box">
+            <div class="dropdown-container">
+              <input class="country" type="text" placeholder="+886" readonly />
+              <div class="country-dropdown dropdown">
+                <div class="dropdown-option">臺灣 +886</div>
+              </div>
+            </div>
+            <div class="pixeldropdown">
+              <img src="./img/goods/pixel_dropdown.svg" alt="" />
+            </div>
+            <input class="phone_Num" type="text" placeholder="09-" />
+          </div>
+          <p>Down Go可能會撥打您的電話號碼，或是傳送有關會員資訊的簡訊</p>
+        </div>
+        <div class="agree">
+          <label class="subscribe">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            <p>訂閱Down_Go電子報，第一手掌握產品優惠及會員福利等最新消息</p>
+          </label>
+          <div class="policy">
+            <label>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <p class="p1">同意</p>
+            <a href="#" class="connections">隱私權政策與條款</a>
+            <p class="p2">之內容與服務範圍。</p>
+          </div>
+        </div>
+        <div class="Btns">
+          <div id="signup">
+            <p>註冊</p>
+          </div>
+          <a href="./login.html" id="goback">
+            <p>返回</p>
           </a>
         </div>
-        <div class="bandage">
-          <a>
-            <p>急救包紮</p>
+      </div>
+    </div>
+
+    <!--footer-->
+    <section class="footer">
+      <div class="contents">
+        <div class="shortcuts">
+          <p class="NOTICE">NOTICE</p>
+          <a href="./login.html" class="MEMBERSHIP">
+            <p>MEMBERSHIP</p>
+          </a>
+          <p class="GUIDE">GUIDE</p>
+          <p class="PRIVACY POLICY">PRIVACY POLICY</p>
+          <p class="ABOUT">ABOUT</p>
+        </div>
+        <div class="divider"></div>
+        <div class="infos">
+          <div class="info1">
+            <p>COMPANY：Down Go Work Studio</p>
+            <p>ADDRESS：106台北市大安區復興南路一段76號</p>
+          </div>
+          <div class="info2">
+            <p>TEL:02-8960-4282</p>
+            <p>ADDRESS：106台北市大安區復興南路一段76號</p>
+          </div>
         </div>
       </div>
-      <div class="enter_option">
-        <div class="snakbee">
-          <a>
-            <p>毒螫魔</p>
-          </a>
-        </div>
-        <div class="fish">
-          <a>
-            <p>鐵支麵粉鯛</p>
-        </div>
-        <div class="pig">
-          <a>
-            <p>相撲熊豬刃牙</p>
-        </div>
-        <div class="hypoxia">
-          <a href="#">
-            <p>高山絕氧獸</p>
-        </div>
-        <div class="hypothermia">
-          <a>
-            <p>凝寒失溫龍</p>
-        </div>
-      </div>
-      <div class="heaven_option">
-        <div class="commodity">
-          <a href="./frog.html">
-            <p>商品購買</p>
-          </a>
-        </div>
-        <div class="membership">
-          <a href="./frog.html">
-            <p>會員登入</p>
-        </div>
+      <div class="copyright">
+        <p class="copyicon">©</p>
+        <p class="copytext">DOWN GO STUDIO All rights reserved.</p>
       </div>
     </section>
+    <script>
+      //刷新頁面時置頂復位
+      window.onbeforeunload = function () {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      };
 
-    <!-- 施工頁開始 -->
-    
-    <div class="header">
-      <div class="header_left">
-        <a href="./index.html">
-          <img src="./img/logotype.png" id="logotype" />
-        </a>
-      </div>
-      <div class="header_center">
-        <p>ALTITUDE</p> <div id="scrollingNumber" class="scrollingNumber">∞</div> <p class="M">M</p>
-        <img src="./img/login/會員登入.svg" id="title" class="flipimg" />
-        <p class="level">LEVEL</p>
-        <div id="scrollingText">3-2</div>
-      </div>
-      <div class="header_right">
-        <a>
-          <img id="shopping_cart" src="./img/login/shopping_cart.svg">
-        </a>
-        <img src="./img/hambergur2.png" onmousedown="mDownb(this)" onmouseup="mUpb(this)" id="bag_burger" />
-      </div>
-    </div>
+      //顯示密碼
+      const eyesIcon = document.querySelector(".eyes img");
+      const passwordInput = document.querySelector(".password-input");
+      const biocheckInput = document.querySelector(".biocheck");
 
-    <!--登入內容框-->
-    <div class="background-frame">
-      <div id="member">
-        <p>建立帳號</p>
-      </div>
-        <div class="name">
-            <input id="firstname" type="text" placeholder="姓氏">
-            <input id="lastname" type="text" placeholder="名字">
-        </div>
-      <div class="input">
-        <input type="email" id="email" placeholder="會員帳號/電子郵件">
-        <input type="password" id="password1" placeholder="會員密碼">    
-        <input type="password" id="password2" placeholder="確認密碼">
-      </div>
-      <div class="box">
-        <div id="alert">
-            <input id="alertin" type="checkbox"><label for="alertin">訂閱Down_Go電子報，第一手掌握產品優惠及會員福利等最新消息</label>
-        </div>
-        <div id="private">
-            <input id="privatein" type="checkbox"><label for="privatein">隱私權政策與條款</label>
-        </div>
-      </div>
-      <div id="signupbtn" onclick="SendMail()">
-        <p>註冊</p>
-      </div>
-      <div id="fast">
-        <p>-社群帳號註冊-</p>
-      </div>
-      <div class="fastlogin">
-        <div class="fb">
-          <img src="./img/login/fb.svg">
-          <p>FACEBOOK</p>
-        </div>
-        <div class="apple">
-          <img src="./img/login/apple.svg">
-          <p>APPLE ID</p>
-        </div>
-        <div class="twitter">
-          <img src="./img/login/twitter.svg">
-          <p>TWITTER</p>
-        </div>
-      </div>
-    </div>
+      document.querySelector(".eyes").addEventListener("click", function () {
+        const isPasswordHidden = passwordInput.type === "password";
 
-    <script src="./js/gsap.min.js"></script>
-    <script src="./js/parallax.min.js"></script>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="./js/signup.js"></script>
+        // Toggle password visibility
+        passwordInput.type = isPasswordHidden ? "text" : "password";
+        biocheckInput.type = isPasswordHidden ? "text" : "password";
+
+        // Toggle icon
+        eyesIcon.src = isPasswordHidden
+          ? "./img/login_signup/visibility_off.svg"
+          : "./img/login_signup/visibility.svg";
+      });
+
+      //月份dropdown
+      document.querySelector(".month").addEventListener("click", function () {
+        toggleDropdown(".month-dropdown");
+        toggleImageRotation(".born .pixeldropdown img");
+      });
+
+      document.querySelector(".country").addEventListener("click", function () {
+        toggleDropdown(".country-dropdown");
+        toggleImageRotation(".phone .pixeldropdown img");
+      });
+
+      function toggleDropdown(dropdownClass) {
+        document.querySelectorAll(".dropdown").forEach(function (dropdown) {
+          dropdown.style.display = "none";
+        });
+
+        const dropdown = document.querySelector(dropdownClass);
+        if (dropdown) {
+          dropdown.style.display =
+            dropdown.style.display === "block" ? "none" : "block";
+        }
+      }
+
+      function toggleImageRotation(imgSelector) {
+        const img = document.querySelector(imgSelector);
+        if (img) {
+          img.classList.toggle("rotated");
+        }
+      }
+
+      document.querySelectorAll(".dropdown-option").forEach(function (option) {
+        option.addEventListener("click", function () {
+          const input = this.closest(".dropdown-container").querySelector(
+            "input"
+          );
+          input.value = this.textContent;
+          this.parentNode.style.display = "none";
+
+          resetImageRotation(".born .pixeldropdown img");
+          resetImageRotation(".phone .pixeldropdown img");
+        });
+      });
+
+      function resetImageRotation(imgSelector) {
+        const img = document.querySelector(imgSelector);
+        if (img) {
+          img.classList.remove("rotated");
+        }
+      }
+
+      document.addEventListener("click", function (event) {
+        if (!event.target.closest(".dropdown-container")) {
+          document.querySelectorAll(".dropdown").forEach(function (dropdown) {
+            dropdown.style.display = "none";
+          });
+
+          resetImageRotation(".born .pixeldropdown img");
+          resetImageRotation(".phone .pixeldropdown img");
+        }
+      });
+    </script>
   </body>
 </html>

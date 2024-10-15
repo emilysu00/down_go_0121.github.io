@@ -1,3 +1,67 @@
+//Parallax
+
+let scene = document.getElementById("scene");
+let parallaxInstance = new Parallax(scene);
+
+// 跳轉小青蛙 to Shop / to Membership
+const btnShop = document.getElementById("toshop");
+const btnMember = document.getElementById("tomember");
+const btnPurchase = document.getElementById("topurcahse");
+const btnLogin = document.getElementById("tologin");
+const frogjump = document.getElementById("frogjump");
+const jump = document.getElementById("jump");
+const menu = document.getElementsByClassName("menu");
+
+btnShop.addEventListener("click", () => {
+  console.log("tosshop");
+
+  jump.src = "./img/goods/jump.gif";
+
+  frogjump.style.opacity = 1;
+  setTimeout(() => {
+    window.open("goods_main.html", "_blank");
+    frogjump.style.opacity = 0;
+  }, 4580);
+});
+
+btnMember.addEventListener("click", () => {
+  console.log("tomember");
+
+  jump.src = "./img/goods/jump.gif";
+
+  frogjump.style.opacity = 1;
+  setTimeout(() => {
+    window.open("login.html", "_blank");
+    frogjump.style.opacity = 0;
+  }, 4580);
+});
+
+//登山口跳轉
+btnPurchase.addEventListener("click", () => {
+  console.log("tosshop");
+
+  jump.src = "./img/goods/jump.gif";
+
+  frogjump.style.opacity = 1;
+  setTimeout(() => {
+    window.open("goods_main.html", "_blank");
+    frogjump.style.opacity = 0;
+  }, 4580);
+});
+
+btnLogin.addEventListener("click", () => {
+  console.log("tomember");
+
+  jump.src = "./img/goods/jump.gif";
+
+  frogjump.style.opacity = 1;
+  setTimeout(() => {
+    window.open("login.html", "_blank");
+    frogjump.style.opacity = 0;
+  }, 4580);
+});
+
+// hamburger跳轉
 $("#bag_burger").click(function () {
   $(".menu").css("visibility", "visible").show();
   $(".menu").css("top", "0");
@@ -35,9 +99,32 @@ document.addEventListener("DOMContentLoaded", function () {
       backgroundImageSource = "./img/package/title.png";
     }
 
-    // 应用翻牌效果
-    // theCard.style.transition = "all 0.1s ease";
-    // theCard.style.transform = "rotateY(180deg)";
+    // 在翻牌效果完成后更改背景图
+    setTimeout(function () {
+      theCard.style.backgroundImage = `url("${backgroundImageSource}")`;
+      theCard.style.transform = "rotateY(360deg)";
+    }, 300);
+  });
+});
+// 手機header海拔高度滾動效果
+document.addEventListener("DOMContentLoaded", function () {
+  const theCard = document.querySelector(".thecard-forphone");
+  let isCardFlipped = false;
+
+  window.addEventListener("scroll", function () {
+    const scrollingNumber = parseInt(
+      document.getElementById("scrollingNumber-forphone").textContent
+    );
+
+    let backgroundImageSource = "../img/fight/tag_equipment_text.png";
+
+    if (scrollingNumber >= 200 && scrollingNumber < 400) {
+      backgroundImageSource = "./img/fight/tag_hurt_text.png";
+    } else if (scrollingNumber >= 400) {
+      backgroundImageSource = "./img/fight/tag_entry_text.png";
+    } else {
+      backgroundImageSource = "./img/fight/tag_equipment_text.png";
+    }
 
     // 在翻牌效果完成后更改背景图
     setTimeout(function () {
@@ -51,6 +138,29 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const theCard = document.querySelector(".thecard");
   const mainContainer = document.getElementById("maincontainer");
+
+  let isCardFlipped = false;
+
+  window.addEventListener("scroll", function () {
+    const scrollPercentage =
+      (window.scrollY /
+        (document.documentElement.scrollHeight - window.innerHeight)) *
+      100;
+
+    if (scrollPercentage >= 100 && !isCardFlipped) {
+      theCard.style.transform = "rotateY(180deg)";
+      isCardFlipped = true;
+    } else if (scrollPercentage < 100 && isCardFlipped) {
+      theCard.style.transform = "rotateY(0deg)";
+      isCardFlipped = false;
+    }
+  });
+});
+
+// 手機header中間img翻頁效果
+document.addEventListener("DOMContentLoaded", function () {
+  const theCard = document.querySelector(".thecard-forphone");
+  const mainContainer = document.getElementById("maincontainer-forphone");
 
   let isCardFlipped = false;
 
@@ -90,6 +200,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+// 手機header海拔高度滾動效果
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollingNumberElement = document.getElementById(
+    "scrollingNumber-forphone"
+  );
+
+  let currentNumber = 100;
+
+  window.addEventListener("scroll", function () {
+    const bottomOffset = window.innerHeight * 0.34; // 34vh
+    const scrollPercentage =
+      (window.scrollY /
+        (document.documentElement.scrollHeight -
+          bottomOffset -
+          window.innerHeight)) *
+      100;
+
+    const newNumber = Math.round(100 + (scrollPercentage / 100) * 400);
+
+    if (newNumber <= 500 && newNumber !== currentNumber) {
+      currentNumber = newNumber;
+      scrollingNumberElement.textContent = currentNumber;
+    } else if (newNumber > 500) {
+      scrollingNumberElement.textContent = 500; // 直接设置为500
+    }
+  });
+});
 
 // header level 等級滾動效果
 document.addEventListener("DOMContentLoaded", function () {
@@ -124,16 +261,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-// phone header level 等級滾動效果
+
+// 手機header level 等級滾動效果
 document.addEventListener("DOMContentLoaded", function () {
   const scrollingNumberElement = document.getElementById(
-    "scrollingNumber-phone"
+    "scrollingNumber-forphone"
   );
-  const scrollingTextElement = document.getElementById("scrollingText-phone");
+  const scrollingTextElement = document.getElementById(
+    "scrollingText-forphone"
+  );
+  const headerElement = document.querySelector(".header-forphone");
 
   let currentNumber = 1000;
+  let isFixed = false; // 标记 header 是否已经固定
 
   window.addEventListener("scroll", function () {
+    // 计算滚动百分比
     const scrollPercentage =
       (window.scrollY /
         (document.documentElement.scrollHeight - window.innerHeight)) *
@@ -156,6 +299,22 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       scrollingTextElement.textContent = newText;
+    }
+
+    // 计算 200vh 对应的像素值
+    const thresholdY = window.innerHeight * 2; // 300vh 等于窗口高度的 3 倍
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY < thresholdY) {
+      // 当滚动位置小于 300vh 时，header 固定
+      headerElement.style.position = "fixed";
+      headerElement.style.top = `${window.innerHeight * 0.85}px`; // 固定 header，距离视口顶部 40vh
+      isFixed = true; // 更新状态为已固定
+    } else if (currentScrollY >= thresholdY && isFixed) {
+      // 当滚动位置超过 300vh 时，header 变为绝对定位
+      headerElement.style.position = "absolute";
+      headerElement.style.top = `${window.innerHeight * 2.8}px`; // 固定 header，距离视口顶部 40vh
+      isFixed = false; // 更新状态为未固定
     }
   });
 });
@@ -600,61 +759,3 @@ gsap
     },
   })
   .to(".entry", { backgroundPosition: "50% 0", ease: "none" });
-
-// 雲轉場的parallax
-// window.addEventListener("scroll", function () {
-//   const scrollValue = window.scrollY;
-//   const imgElement = document.getElementById("transcloud1");
-
-//   const newBottomValue = 125 - scrollValue / 13 + "vh";
-
-//   imgElement.style.top = newBottomValue;
-// });
-// window.addEventListener("scroll", function () {
-//   const scrollValue = window.scrollY;
-//   const imgElement = document.getElementById("transcloud3");
-
-//   const newBottomValue = 146 - scrollValue / 13 + "vh";
-
-//   imgElement.style.top = newBottomValue;
-// });
-// window.addEventListener("scroll", function () {
-//   const scrollValue = window.scrollY;
-//   const imgElement = document.getElementById("transcloud4");
-
-//   const newBottomValue = 160 - scrollValue / 13 + "vh";
-
-//   imgElement.style.top = newBottomValue;
-// });
-// window.addEventListener("scroll", function () {
-//   const scrollValue = window.scrollY;
-//   const imgElement = document.getElementById("transcloud5");
-
-//   const newBottomValue = 400 - scrollValue / 13 + "vh";
-
-//   imgElement.style.top = newBottomValue;
-// });
-// window.addEventListener("scroll", function () {
-//   const scrollValue = window.scrollY;
-//   const imgElement = document.getElementById("transcloud6");
-
-//   const newBottomValue = 422 - scrollValue / 13 + "vh";
-
-//   imgElement.style.top = newBottomValue;
-// });
-// window.addEventListener("scroll", function () {
-//   const scrollValue = window.scrollY;
-//   const imgElement = document.getElementById("transcloud7");
-
-//   const newBottomValue = 443 - scrollValue / 13 + "vh";
-
-//   imgElement.style.top = newBottomValue;
-// });
-// window.addEventListener("scroll", function () {
-//   const scrollValue = window.scrollY;
-//   const imgElement = document.getElementById("transcloud8");
-
-//   const newBottomValue = 448 - scrollValue / 13 + "vh";
-
-//   imgElement.style.top = newBottomValue;
-// });

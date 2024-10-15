@@ -17,8 +17,19 @@ body {
   background-size: cover;
 }
 
-/* navigation */
+/* 跳轉小青蛙 */
+#frogjump {
+  opacity: 0;
+}
+#frogjump img {
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+  background-color: #fafafa;
+  z-index: 100;
+}
 
+/* navigation */
 nav {
   position: absolute;
   width: 97vw;
@@ -104,7 +115,7 @@ nav .burger a img :active {
   bottom: 3vw;
   left: 17vw;
   filter: brightness(0.98);
-  z-index: 2;
+  z-index: 1;
 }
 
 .sea-monster img {
@@ -293,7 +304,7 @@ nav .burger a img :active {
   bottom: 0;
   right: 0;
   width: 100vw;
-  height: 90vh;
+  height: 80vh;
   background: none;
   border: none;
   cursor: pointer;
@@ -305,6 +316,7 @@ nav .burger a img :active {
   animation-iteration-count: 1;
   animation-delay: 2.5s;
   animation-fill-mode: forwards; /*保留最後設定的樣式值*/
+  display: block;
 }
 
 @keyframes circleout {
@@ -350,7 +362,7 @@ nav .burger a img :active {
 }
 
 .menu nav .logo {
-  width: 30vh;
+  width: 30vw;
 }
 
 .menu_bgimg .bg img {
@@ -368,9 +380,9 @@ nav .burger a img :active {
 }
 
 .menu_close {
-  width: 10vw;
   height: 5vh;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -384,10 +396,11 @@ nav .burger a img :active {
 }
 .menu_close a img {
   display: block;
+  max-width: 100%;
+  height: auto;
   position: absolute;
-  right: 0;
-  top: 4vh;
-  width: 4.5vw;
+  right: 0.3vw;
+  width: 3.5vw;
   text-shadow: 10px 10px 5px #5f1c68;
   cursor: pointer;
   margin: 0 0;
@@ -485,12 +498,20 @@ nav .burger a img :active {
   z-index: 1;
 }
 
-/* menu的選項 畫面設定 */
-.menu {
-  background-color: #ffffff;
-  background-image: url(../img/main/background.png);
-  background-size: cover;
+.alert {
+  position: absolute;
+  right: 2vw;
+  bottom: 2vh;
+  z-index: 5;
+  opacity: 65%;
 }
+
+.alert img {
+  width: 5vw;
+  cursor: pointer;
+}
+
+/* menu的選項 畫面設定 */
 
 .title {
   position: absolute;
@@ -513,14 +534,7 @@ nav .burger a img :active {
   font-size: 28px;
   font-weight: 700;
 }
-.menu .logo {
-  width: fit-content;
-  padding-top: 3vh;
-  margin-left: 2vw;
-}
-.menu .logo img {
-  width: 18vw;
-}
+
 .cutline {
   position: absolute;
   left: calc(50% - 28vw);
@@ -531,21 +545,15 @@ nav .burger a img :active {
   z-index: 5;
 }
 
+.menu p {
+  font-family: "Noto Sans TC";
+}
+
 .wood_option {
   position: absolute;
   top: 30vh;
-  left: 28.6vw;
+  left: 29.6vw;
   z-index: 5;
-}
-@media (min-width: 1400px) and (max-width: 1599px) {
-  .wood_option {
-    left: 28.6vw;
-  }
-}
-@media (min-width: 1600px) {
-  .wood_option {
-    left: 29.6vw;
-  }
 }
 
 .wood_option div {
@@ -556,10 +564,12 @@ nav .burger a img :active {
   border-bottom-color: #262626;
   border-width: 2px;
 }
+
 .wood_option div:hover {
   border-bottom-style: outset;
   padding-bottom: 5px;
   transition: all 180ms ease-out;
+  cursor: pointer;
 }
 
 .wood_option div a {
@@ -581,9 +591,15 @@ nav .burger a img :active {
   padding-top: 17px;
   padding-bottom: 7px;
   font-size: 22px;
+  border-bottom-style: none;
+  border-bottom-color: #262626;
+  border-width: 2px;
 }
 .enter_option div:hover {
+  border-bottom-style: outset;
+  padding-bottom: 5px;
   transition: all 180ms ease-out;
+  cursor: pointer;
 }
 
 .enter_option div a {
@@ -597,21 +613,14 @@ nav .burger a img :active {
 }
 
 .purple {
-  position: absolute;
-  width: 10vw;
   color: #5f1c68;
   font-size: large;
   opacity: 0;
-  left: 0vw;
 }
 
 .enter_option div:hover .purple {
   opacity: 1;
   transition: opacity 180ms ease-out;
-}
-
-.enter_option div:hover .hover {
-  opacity: 0;
 }
 
 .heaven_option {
@@ -633,25 +642,13 @@ nav .burger a img :active {
   border-bottom-style: outset;
   padding-bottom: 5px;
   transition: all 180ms ease-out;
+  cursor: pointer;
 }
 
 .heaven_option div a {
   z-index: 3;
   text-decoration: none;
   color: #262626;
-}
-
-.alert {
-  position: absolute;
-  right: 2vw;
-  bottom: 2vh;
-  z-index: 5;
-  opacity: 65%;
-}
-
-.alert img {
-  width: 5vw;
-  cursor: pointer;
 }
 
 /* 漢堡選單 overflow 設定 */

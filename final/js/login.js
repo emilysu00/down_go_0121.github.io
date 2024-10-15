@@ -1,49 +1,56 @@
-//Call out hamburger
-$("#bag_burger").click(function () {
-  $(".menu").css("visibility", "visible").show();
-  $(".menu").css("top", "0");
-});
-$("#close_icon").click(function () {
-  $(".menu").css("top", "-110vh");
-  $(".menu").css("visibility", "hidden");
-});
-$(".wood_option .preparing").click(function () {
-  $(".menu").css("top", "-110vh");
-  $(".menu").css("visibility", "hidden");
-});
-$(".wood_option .bandage").click(function () {
-  $(".menu").css("top", "-110vh");
-  $(".menu").css("visibility", "hidden");
-});
+//刷新頁面時置頂復位
+window.onbeforeunload = function () {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+};
 
-//hambuger_icon change
-function mDownb(obj) {
-  obj.style.width = "5.4vw";
-  setTimeout(this, 300);
+// 通知
+function on() {
+  document.getElementById("overlay").style.display = "block";
 }
 
-function mUpb(obj) {
-  obj.style.width = "6vw";
-  setTimeout(this, 300);
+function off() {
+  document.getElementById("overlay").style.display = "none";
 }
 
-function mDownx(obj) {
-  obj.style.width = "3.8vw";
-  setTimeout(this, 300);
-}
+//顯示password
+const input = document.querySelector(".password");
+const toggleVisibility = document.querySelector(".invisible img");
 
-function mUpx(obj) {
-  obj.style.width = "4vw";
-  setTimeout(this, 300);
-}
-
-//transition to DwonGo_1.1
-const button = document.getElementById("myButton");
-const mask = document.getElementById("mask");
-
-button.addEventListener("click", () => {
-  mask.style.opacity = 1;
-  setTimeout(() => {
-    window.location.href = "bag_hurt.html";
-  }, 1500);
+toggleVisibility.addEventListener("click", () => {
+  if (input.getAttribute("type") === "password") {
+    input.setAttribute("type", "text");
+    toggleVisibility.setAttribute(
+      "src",
+      "./img/login_signup/visibility_off.svg"
+    );
+  } else {
+    input.setAttribute("type", "password");
+    toggleVisibility.setAttribute("src", "./img/login_signup/visibility.svg");
+  }
 });
+
+//sendmail
+function SendMail() {
+  var params = {
+    email: document.getElementById("email").value,
+  };
+  emailjs
+    .send("service_i0f0jv3", "template_ts36ue7", params)
+    .then(function (res) {
+      document.getElementById("email").value = "";
+      console.log(res);
+      alert("您已註冊成功！請查看信箱獲取小青蛙送你的桌布～");
+      // 跳轉到 membership.html
+      window.location.href = "membership.html";
+    });
+}
+
+//按Enter送出
+document
+  .querySelector(".password")
+  .addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      SendMail();
+    }
+  });
